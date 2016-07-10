@@ -1,0 +1,1138 @@
+Работа с текстом
+
+ctrl+alt+a - выравнивание
+
+
+Сокращение
+Расшифровка сокращения
+Базовый синтаксис EMMET
+Дочерний: >	
+codesource
+nav>ul>li
+<nav>
+    <ul>
+        <li></li>
+    </ul>
+</nav>
+
+Соединение: +	
+codesource
+div+p+bq
+<div></div>
+<p></p>
+<blockquote></blockquote>
+
+Поместить выше (в дереве HTML): ^	
+codesource
+div>p>span+em^bq
+<div>
+    <p><span></span><em></em></p>
+    <blockquote></blockquote>
+</div>
+Группировать: ()	
+codesource
+div>(header>ul>li)+footer>p
+    <div>
+    <header>
+        <ul>
+            <li></li>
+        </ul>
+    </header>
+    <footer>
+        <p></p>
+        </footer>
+</div>
+Умножение: *	
+codesource
+ul>li*3
+<ul>
+    <li></li>
+    <li></li>
+    <li></li>
+</ul>
+Нумерация: $	
+codesource
+ul>li.item_$*3
+<ul>
+    <li class="item_1"></li>
+    <li class="item_2"></li>
+    <li class="item_3"></li>
+</ul>
+id и class	
+codesource
+#header+.class
+<div id="header"></div>
+<div class="class"></div>
+
+#hdr.cl_1.cl_2
+<div id="hdr" class="cl_1 cl_2"></div>
+Атрибуты: []	
+codesource
+a[title="Подсказка ссылки"]
+<a href="" title="Подсказка ссылки"></a>
+
+td[rowspan colspan title]
+<td rowspan="" colspan="" title=""></td>
+Текст: {}	
+codesource
+.class{свободный текст}
+<div class="class">свободный текст</div>
+
+p>{Кликните }+a{сюда}+{ скорее}
+<p>Кликните <a href="">сюда</a> скорее</p>
+Сокращение тегов	
+codesource
+.class
+<div class="class"></div>
+
+em>.class
+<em><span class="class"></span></em>
+
+ul>.class
+<ul>
+    <li class="class"></li>
+</ul>
+
+table>.row>.col
+<table>
+    <tr class="row">
+        <td class="col"></td>
+    </tr>
+</table>
+HTML сокращения
+!	
+codesource
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Document</title>
+    </head>
+    <body>
+
+    </body>
+</html>
+a	
+codesource
+<a href=""></a>
+a:link	
+codesource
+<a href="http://"></a>
+a:mail	
+codesource
+<a href="mailto:"></a>
+base	
+codesource
+<base href="">
+br	
+codesource
+<br>
+link	
+codesource
+<link rel="stylesheet" href="">
+link:css	
+codesource
+<link rel="stylesheet" href="style.css">
+link:favicon	
+codesource
+<link rel="shortcut icon" type="image/x-icon"
+href="favicon.ico">
+link:rss	
+codesource
+<link rel="alternate" type="application/rss+xml"
+title="RSS" href="rss.xml">
+link:atom	
+codesource
+<link rel="alternate" type="application/atom+xml"
+title="Atom" href="atom.xml">
+meta:utf	
+codesource
+<meta http-equiv="Content-Type"
+content="text/html;charset=UTF-8">
+meta:vp	
+codesource
+<meta name="viewport" content="width=device-width,
+user-scalable=no, initial-scale=1.0,
+maximum-scale=1.0, minimum-scale=1.0">
+meta:compat	
+codesource
+<meta http-equiv="X-UA-Compatible" content="IE=7">
+script:src	
+codesource
+<script src=""></script>
+img	
+codesource
+<img src="" alt="">
+ifr	
+codesource
+<iframe src="" frameborder="0"></iframe>
+emb	
+codesource
+<embed src="" type="">
+obj	
+codesource
+<object data="" type=""></object>
+map	
+codesource
+<map name=""></map>
+map+	
+codesource
+<map name="">
+    <area shape="" coords="" href="" alt="">
+</map>
+area	
+codesource
+<area shape="" coords="" href="" alt="">
+form	
+codesource
+<form action=""></form>
+form:get
+form:post	
+codesource
+<form action="" method="get"></form>
+<form action="" method="post"></form>
+label	
+codesource
+<label for=""></label>
+input	
+codesource
+<input type="text">
+inp	
+codesource
+<input type="text" name="" id="">
+input:h	
+codesource
+<input type="hidden" name="">
+input:p	
+codesource
+<input type="password" name="" id="">
+input:c	
+codesource
+<input type="checkbox" name="" id="">
+input:r	
+codesource
+<input type="radio" name="" id="">
+input:f	
+codesource
+<input type="file" name="" id="">
+input:s	
+codesource
+<input type="submit" value="">
+input:i	
+codesource
+<input type="image" src="" alt="">
+input:b	
+codesource
+<input type="button" value="">
+input:reset	
+codesource
+<input type="reset" value="">
+select	
+codesource
+<select name="" id=""></select>
+select+	
+codesource
+<select name="" id="">
+    <option value=""></option>
+</select>
+opt	
+codesource
+<option value=""></option>
+tarea	
+codesource
+<textarea name="" id="" cols="30" rows="10">
+</textarea>
+video	
+codesource
+<video src=""></video>
+audio	
+codesource
+<audio src=""></audio>
+bq	
+codesource
+<blockquote></blockquote>
+fst	
+codesource
+<fieldset></fieldset>
+btn	
+codesource
+<button></button>
+btn:s	
+codesource
+<button type="submit"></button>
+btn:b	
+codesource
+<button type="button"></button>
+btn:r	
+codesource
+<button type="reset"></button>
+sect	
+codesource
+<section></section>
+art	
+codesource
+<article></article>
+hdr	
+codesource
+<header></header>
+ftr	
+codesource
+<footer></footer>
+str	
+codesource
+<strong></strong>
+ol+	
+codesource
+<ol>
+    <li></li>
+</ol>
+ul+	
+codesource
+<ul>
+    <li></li>
+</ul>
+dl+	
+codesource
+<dl>
+    <dt></dt>
+    <dd></dd>
+</dl>
+table+	
+codesource
+<table>
+    <tr>
+        <td></td>
+    </tr>
+</table>
+tr+	
+codesource
+<tr>
+    <td></td>
+</tr>
+c	
+codesource
+<!-- Комментарий -->
+cc:ie6	
+codesource
+<!--[if lte IE 6]>
+
+<![endif]-->
+cc:ie	
+codesource
+<!--[if IE]>
+
+<![endif]-->
+cc:noie	
+codesource
+<!--[if !IE]><!-->
+
+<!--<![endif]-->
+Любой тег	
+codesource
+div
+<div></div>
+
+span
+<span></span>
+
+Любой другой тег
+<tagname></tagname>
+CSS сокращения
+pos	
+codesource
+position: relative;
+posa	
+codesource
+position: absolute;
+posr	
+codesource
+position: relative;
+posf	
+codesource
+position: fixed;
+t	
+codesource
+top: ;
+t:a	
+codesource
+top: auto;
+r	
+codesource
+right: ;
+r:a	
+codesource
+right: auto;
+b	
+codesource
+bottom: ;
+b:a	
+codesource
+bottom: auto;
+l	
+codesource
+left: ;
+l:a	
+codesource
+left: auto;
+z	
+codesource
+z-index: ;
+za	
+codesource
+z-index: auto;
+fl	
+codesource
+float: left;
+fln	
+codesource
+float: none;
+fr	
+codesource
+float: right;
+cl	
+codesource
+clear: both;
+d	
+codesource
+display: block;
+dn	
+codesource
+display: none;
+di	
+codesource
+display: inline;
+dib	
+codesource
+display: inline-block;
+dt	
+codesource
+display: table;
+dtc	
+codesource
+display: table-cell;
+dtr	
+codesource
+display: table-row;
+v	
+codesource
+visibility: hidden;
+vv	
+codesource
+visibility: visible;
+oh	
+codesource
+overflow: hidden;
+ovv	
+codesource
+overflow: visible;
+os	
+codesource
+overflow: scroll;
+oa	
+codesource
+overflow: auto;
+zm	
+codesource
+zoom: 1;
+cu	
+codesource
+cursor: ;
+cup	
+codesource
+cursor: pointer;
+cud	
+codesource
+cursor: default;
+cuh	
+codesource
+cursor: hand;
+cuhe	
+codesource
+cursor: help;
+cum	
+codesource
+cursor: move;
+cut	
+codesource
+cursor: text;
+m	
+codesource
+margin: ;
+m:a	
+codesource
+margin: auto;
+mt	
+codesource
+margin-top: ;
+mta	
+codesource
+margin-top: auto;
+mr	
+codesource
+margin-right: ;
+mra	
+codesource
+margin-right: auto;
+mb	
+codesource
+margin-bottom: ;
+mba	
+codesource
+margin-bottom: auto;
+ml	
+codesource
+margin-left: ;
+mla	
+codesource
+margin-left: auto;
+p	
+codesource
+padding: ;
+pt	
+codesource
+padding-top: ;
+pr	
+codesource
+padding-right: ;
+pb	
+codesource
+padding-bottom: ;
+pl	
+codesource
+padding-left: ;
+bsh	
+codesource
+-webkit-box-shadow: inset hoff voff blur color;
+-moz-box-shadow: inset hoff voff blur color;
+box-shadow: inset hoff voff blur color;
+bshn	
+codesource
+-webkit-box-shadow: none;
+-moz-box-shadow: none;
+box-shadow: none;
+w	
+codesource
+width: ;
+wa	
+codesource
+width: auto;
+h	
+codesource
+height: ;
+ha	
+codesource
+height: auto;
+maw	
+codesource
+max-width: ;
+mah	
+codesource
+max-height: ;
+mw	
+codesource
+min-width: ;
+mh	
+codesource
+min-height: ;
+f	
+codesource
+font: ;
+f+	
+codesource
+font: 1em Arial,sans-serif;
+fw	
+codesource
+font-weight: ;
+fwn	
+codesource
+font-weight: normal;
+fwb	
+codesource
+font-weight: bold;
+fs	
+codesource
+font-style: italic;
+fsn	
+codesource
+font-style: normal;
+fsi	
+codesource
+font-style: italic;
+fz	
+codesource
+font-size: ;
+ff	
+codesource
+font-family: ;
+ffs	
+codesource
+font-family: serif;
+ffss	
+codesource
+font-family: sans-serif;
+ffm	
+codesource
+font-family: monospace;
+ffa	
+codesource
+font-family: Arial, "Helvetica Neue", Helvetica,
+sans-serif;
+va	
+codesource
+vertical-align: top;
+vm	
+codesource
+vertical-align: middle;
+vabl	
+codesource
+vertical-align: baseline;
+vb	
+codesource
+vertical-align: bottom;
+vs	
+codesource
+vertical-align: sub;
+ta	
+codesource
+text-align: left;
+tac	
+codesource
+text-align: center;
+tar	
+codesource
+text-align: right;
+taj	
+codesource
+text-align: justify;
+td	
+codesource
+text-decoration: none;
+tdu	
+codesource
+text-decoration: underline;
+tdo	
+codesource
+text-decoration: overline;
+tdl	
+codesource
+text-decoration: line-through;
+tt	
+codesource
+text-transform: uppercase;
+ttn	
+codesource
+text-transform: none;
+ttl	
+codesource
+text-transform: lowercase;
+ts	
+codesource
+text-shadow: hoff voff blur #000;
+tra	
+codesource
+text-shadow: h v blur rgba(0, 0, 0, .5);
+ts+	
+codesource
+text-shadow: 0 0 0 #000;
+tsn	
+codesource
+text-shadow: none;
+lh	
+codesource
+line-height: ;
+lts	
+codesource
+letter-spacing: ;
+ws	
+codesource
+white-space: ;
+wsn	
+codesource
+white-space: normal;
+wsnw	
+codesource
+white-space: nowrap;
+bg	
+codesource
+background: #000;
+bg+	
+codesource
+background: #fff url() 0 0 no-repeat;
+bn	
+codesource
+background: none;
+bgc	
+codesource
+background-color: #fff;
+bgt	
+codesource
+background-color: transparent;
+bgi	
+codesource
+background-image: url();
+bgin	
+codesource
+background-image: none;
+bgr	
+codesource
+background-repeat: ;
+bgrn	
+codesource
+background-repeat: no-repeat;
+bgrx	
+codesource
+background-repeat: repeat-x;
+bgry	
+codesource
+background-repeat: repeat-y;
+bga	
+codesource
+background-attachment: ;
+baf	
+codesource
+background-attachment: fixed;
+bas	
+codesource
+background-attachment: scroll;
+bgp	
+codesource
+background-position: 0 0;
+bgs	
+codesource
+-webkit-background-size: ;
+background-size: ;
+bsa	
+codesource
+-webkit-background-size: auto;
+background-size: auto;
+c	
+codesource
+color: #000;
+cra	
+codesource
+color: rgba(0, 0, 0, .5);
+op	
+codesource
+opacity: ;
+ct	
+codesource
+content: '';
+q	
+codesource
+quotes: ;
+ol	
+codesource
+outline: ;
+on	
+codesource
+outline: none;
+tbl	
+codesource
+table-layout: ;
+cs	
+codesource
+caption-side: ;
+ec	
+codesource
+empty-cells: ;
+bd	
+codesource
+border: ;
+bd+	
+codesource
+border: 1px solid #000;
+bdn	
+codesource
+border: none;
+bdc	
+codesource
+border-color: #000;
+bdi	
+codesource
+-webkit-border-image: url();
+-moz-border-image: url();
+-o-border-image: url();
+border-image: url();
+bdin	
+codesource
+-webkit-border-image: none;
+-moz-border-image: none;
+-o-border-image: none;
+border-image: none;
+bf	
+codesource
+-webkit-border-fit: repeat;
+border-fit: repeat;
+bdle	
+codesource
+border-length: ;
+bsp	
+codesource
+border-spacing: ;
+bds	
+codesource
+border-style: ;
+bw	
+codesource
+border-width: ;
+bt	
+codesource
+border-top: ;
+bt+	
+codesource
+border-top: 1px solid #000;
+bdtn	
+codesource
+border-top: none;
+br	
+codesource
+border-right: ;
+br+	
+codesource
+border-right: 1px solid #000;
+bdrn	
+codesource
+border-right: none;
+bb	
+codesource
+border-bottom: ;
+bb+	
+codesource
+border-bottom: 1px solid #000;
+bdbn	
+codesource
+border-bottom: none;
+bl	
+codesource
+border-left: ;
+bl+	
+codesource
+border-left: 1px solid #000;
+bdln	
+codesource
+border-left: none;
+bdrs	
+codesource
+-webkit-border-radius: ;
+-moz-border-radius: ;
+border-radius: ;
+btrr	
+codesource
+border-top-right-radius: ;
+bdtrs	
+codesource
+border-top-left-radius: ;
+bbrr	
+codesource
+border-bottom-right-radius: ;
+bblr	
+codesource
+border-bottom-left-radius: ;
+lis	
+codesource
+list-style: ;
+lisn	
+codesource
+list-style: none;
+lst	
+codesource
+list-style-type: ;
+lstn	
+codesource
+list-style-type: none;
+lstd	
+codesource
+list-style-type: disc;
+lstc	
+codesource
+list-style-type: circle;
+lsts	
+codesource
+list-style-type: square;
+lstdc	
+codesource
+list-style-type: decimal;
+lsi	
+codesource
+list-style-image: ;
+lsin	
+codesource
+list-style-image: none;
+!	
+codesource
+!important
+@f	
+codesource
+@font-face {
+font-family:;
+src:url();
+}
+@f+	
+codesource
+@font-face {
+    font-family: 'FontName';
+    src: url('FileName.eot');
+    src: url('FileName.eot?#iefix')
+    format('embedded-opentype'),
+        url('FileName.woff') format('woff'),
+        url('FileName.ttf') format('truetype'),
+        url('FileName.svg#FontName') format('svg');
+    font-style: normal;
+    font-weight: normal;
+}
+@i	
+codesource
+@import url();
+@m	
+codesource
+@media screen {
+
+}
+anim	
+codesource
+-webkit-animation: ;
+-o-animation: ;
+animation: ;
+ap	
+codesource
+-webkit-appearance: none;
+-moz-appearance: none;
+appearance: none;
+
+bgie	
+codesource
+filter:progid:DXImageTransform
+.Microsoft.AlphaImageLoader
+(src='x.png',sizingMethod='crop');
+
+cm	
+codesource
+/* Комментарий */
+colm	
+codesource
+columns: ;
+
+trf	
+codesource
+-webkit-transform: ;
+-moz-transform: ;
+-ms-transform: ;
+-o-transform: ;
+transform: ;
+
+trfr	
+codesource
+-webkit-transform: rotate(angle);
+-moz-transform: rotate(angle);
+-ms-transform: rotate(angle);
+-o-transform: rotate(angle);
+transform: rotate(angle);
+
+trfsc	
+codesource
+-webkit-transform: scale(x, y);
+-moz-transform: scale(x, y);
+-ms-transform: scale(x, y);
+-o-transform: scale(x, y);
+transform: scale(x, y);
+
+trft	
+codesource
+-webkit-transform: translate(x, y);
+-moz-transform: translate(x, y);
+-ms-transform: translate(x, y);
+-o-transform: translate(x, y);
+transform: translate(x, y);
+
+tfo	
+codesource
+-webkit-transform-origin: ;
+-moz-transform-origin: ;
+-ms-transform-origin: ;
+-o-transform-origin: ;
+transform-origin: ;
+
+trs	
+codesource
+-webkit-transition: prop time;
+-moz-transition: prop time;
+-ms-transition: prop time;
+-o-transition: prop time;
+transition: prop time;
+
+trsde	
+codesource
+-webkit-transition-delay: time;
+-moz-transition-delay: time;
+-ms-transition-delay: time;
+-o-transition-delay: time;
+transition-delay: time;
+
+trsdu	
+codesource
+-webkit-transition-duration: time;
+-moz-transition-duration: time;
+-ms-transition-duration: time;
+-o-transition-duration: time;
+transition-duration: time;
+
+trsp	
+codesource
+-webkit-transition-property: prop;
+-moz-transition-property: prop;
+-ms-transition-property: prop;
+-o-transition-property: prop;
+transition-property: prop;
+
+us	
+codesource
+-webkit-user-select: none;
+-moz-user-select: none;
+-ms-user-select: none;
+user-select: none;
+
+ctrl + l	Выделить строку.
+ctrl + shift + m	Выделить текст между двумя парными скобками.
+ctrl + shift + a	Выделить текст между двумя парными тегами.
+ctrl + shift + j	Выделить текст с соответствующим отступом.
+ctrl + shift + space	Выделить по контексту.
+ctrl + shift + left	Выделить слово слева.
+ctrl + shift + right	Выделить слово справа.
+ctrl + a	Выделить весь текст.
+ctrl + shift + l	Разделить выделенные строки на независимые участки редактирования.
+ctrl + shift + up	Переместить выделенные строки вверх.
+ctrl + shift + down	Переместить выделенные строки вниз.
+ctrl + shift + d	Дублировать строку.
+ctrl + shift + k	Удалить строку.
+ctrl + backspace	Удалить часть слова до курсора.
+ctrl + delete	Удалить часть слова после курсора.
+ctrl + shift + backspace	Удалить текст от курсора и до начала строки.
+ctrl + k, ctrl + backspace	Удалить текст от курсора и до начала строки.
+ctrl + shift + delete	Удалить текст от курсора и до конца строки.
+ctrl + k, ctrl + k	Удалить текст от курсора и до конца строки.
+ctrl + j	Объединить выделенные строки.
+alt + q	Объединить строки в параграфе.
+ctrl + enter	Добавить пустую строку под курсором.
+ctrl + shift + enter	Добавить пустую строку над курсором.
+ctrl + alt + up	Добавить курсор на следующей или предыдущей строке.
+ctrl + alt + down	Добавить курсор на следующей или предыдущей строке.
+ctrl + /	Добавить или убрать однострочный комментарий.
+ctrl + shift + /	Добавить или убрать блочный комментарий.
+f9	Отсортировать строки в алфавитном порядке.
+ctrl + f9	Отсортировать строки в алфавитном порядке с учетом регистра.
+ctrl + k, ctrl + l	Трансформировать выделенный текст в нижний регистр.
+ctrl + k, ctrl + u	Трансформировать выделенный текст в верхний регистр.
+ctrl + t	Транспонировать текст.
+alt + .	Закрыть незакрытый тег.
+alt + shift + w	Обернуть тегом выделенный текст.
+insert	Переключить режим ввода: вставка или замена.
+ctrl + k, ctrl + space	Установить метку.
+ctrl + k, ctrl + a	Выделить текст от курсора до метки.
+ctrl + k, ctrl + x	Поменять местами метку и курсор.
+ctrl + k, ctrl + w	Удалить метку.
+ctrl + k, ctrl + g	Удалить все метки.
+ctrl + ]	Убрать отступ.
+ctrl + [	Добавить отступ.
+ctrl + y	Повторить последнее действие.
+ctrl + c or ctrl + insert	Копировать.
+ctrl + v or shift + insert	Вставить.
+ctrl + shift + v	Вставить с отступом.
+ctrl + x	Вырезать.
+shift + delete	Вырезать.
+ctrl + z	Отмена последнего действия.
+ctrl + shift + z	Повторить последнее отмененное действие.
+ctrl + u	Отменить последнее выделение.
+ctrl + shift + u	Повторить последнее отмененное выделение.
+Поиск и замена
+Хоткей	Описание
+ctrl + f	Открыть панель поиска.
+ctrl + h	Открыть панель поиска и замены.
+ctrl + shift + f	Открыть панель поиска и замены по всем файлам проекта.
+ctrl + i	Открыть панель быстрого поиска и поиск.
+ctrl + shift + i	Открыть панель быстрого поиска и поиск в обратном направлении.
+alt + a	Включить или выключить режим сохранения регистра на панели поиска и замены.
+alt + r	Включить или выключить использование регулярных выражений на панели поиска и замены.
+f6	Включить или выключить проверку правописания.
+alt + c	Включить или выключить чувствительность к регистру на панели поиска и замены.
+alt + w	Включить или выключить режим поиска слова целиком на панели поиска и замены.
+alt + enter	Найти все.
+ctrl + `	Показать панель.
+shift + enter	Поиск в обратном направлении.
+ctrl + alt + enter	«Заменить все» на панели поиска и замены.
+ctrl + shift + h	Заменить текст далее.
+f3	Поиск.
+shift + f3	Поиск в обратном направлении.
+f4	Переход к следующему результату поиска по всем файлам.
+shift + f4	Переход к предыдущему результату поиска по всем файлам.
+ctrl + f3	Быстрый поиск.
+ctrl + shift + f3	Быстрый поиск в обратном направлении.
+ctrl + d	Найти и выделить текст.
+ctrl + k, ctrl + d	Пропустить выделенный текст.
+alt + f3	Найти все.
+ctrl + e	Скопировать слово или выделенный текст в окно поиска.
+ctrl + shift + e	Скопировать слово или выделенный текст в окно замены.
+ctrl + f6	Перейти к следующей ошибке.
+ctrl + shift + f6	Перейти к предыдущей ошибке.
+ctrl + p	Открыть окно поиска файла «Goto Anything...».
+ctrl + r	Открыть окно перехода к функциональному блоку.
+ctrl + g	Открыть окно для перехода к заданной строке.
+ctrl + ;	Открыть окно для перехода к заданному слову.
+Фолдинг
+Хоткей	Описание
+ctrl + shift + [	Свернуть код.
+ctrl + shift + ]	Развернуть код.
+ctrl + k, ctrl + 1 - 9	Свернуть код соответствующего уровня.
+ctrl + k, ctrl + 0 or ctrl + k, ctrl + j	Развернуть все.
+ctrl + k, ctrl + t	Свернуть атрибуты тегов.
+Навигация
+Хоткей	Описание
+ctrl + alt + p	Открыть окно выбора проектов.
+ctrl + f2	Установить или снять закладку.
+f2	Перейти к следующей закладке.
+shift + f2	Перейти к предыдущей закладке.
+alt + f2	Выделить все закладки.
+ctrl + shift + f2	Удалить все закладки.
+ctrl + k, ctrl + c	Переместить экран к курсору.
+ctrl + up	Прокрутка окна редактирования.
+ctrl + down	Прокрутка окна редактирования.
+ctrl + m	Переместить курсор к парной скобке.
+Управление окнами
+Хоткей	Описание
+alt + 0 - 9	Выбор соответствующей вкладки.
+ctrl + tab	Переключиться на следующую вкладку.
+ctrl + f4	Закрыть вкладку.
+ctrl + shift + tab	Переключиться на предыдущую вкладку.
+ctrl + pageup	Переключиться на вкладку слева.
+ctrl + pagedown	Переключиться на вкладку справа.
+alt + shift + 1 - 5	Управление количеством и расположением областей редактирования.
+alt + shift + 8 - 9	Управление количеством и расположением областей редактирования.
+ctrl + 1 - 4	Переключиться в соответствующую область.
+ctrl + shift + 1 - 4	Переместить вкладку в соответствующую область.
+f11	Развернуть окно во весь экран.
+shift + f11	Переключиться в «Отвлеченный режим».
+ctrl + k, ctrl + b	Показать или скрыть боковую панель.
+ctrl + 0	Переключить фокус на боковую панель.
+ctrl + n	Создать новую вкладку.
+ctrl + w	Закрыть текущую вкладку.
+ctrl + shift + n	Создать новое окно.
+ctrl + shift + w	Закрыть окно.
+Работа с файлами
+Хоткей	Описание
+ctrl + o	Вызвать окно «Открыть файл».
+ctrl + shift + t	Открыть последний закрытый файл.
+ctrl + s	Сохранить текущий файл.
+ctrl + shift + s	Вызвать окно «Сохранить как».
+alt + o	Переключение между файлами представления и реализации.
+Разное
+Хоткей	Описание
+ctrl + shift + p	Открыть окно списка функций.
+ctrl +  + 	Увеличить размер шрифта.
+ctrl + -	Уменьшить размер шрифта.
+ctrl + q	Запустить или остановить запись макроса.
+ctrl + shift + q	Воспроизвести макрос.
+ctrl + alt + shift + p	Отобразить в статусной строке название контекста, в котором находится курсор.
+f7	Выполнить
+ctrl + b	Выполнить
+ctrl + shift + b	Выполнить
+ctrl + break	Отменить выполнение
+ctrl + k, ctrl + y	

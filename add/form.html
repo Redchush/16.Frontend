@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>
+    <meta charset="utf-8">
+	</title>
+    <link href="css/form.css" rel="stylesheet">
+</head>
+<body>
+	<div class="outer absoluteCenter show">
+		<div class="showMask"></div>
+		<div class="inner">
+			<form novalidate="" data-remote="true" method="post" id="login_form" class="s-form login_form validateble" action="/ajax/login/">
+<!-- 				<input type="hidden" value="4b437aee-cc37-487e-992b-d03c9a7eae7e" name="state">
+				<input type="hidden" value="toster" name="consumer"> -->
+				<div class="title">Вход</div>
+				<div class="s-field">
+					<div class="text-wrapper">
+						<input type="email" data-validate_url="/ajax/validate/email/" id="email_field" tabindex="1" autofocus="" data-required="true" name="email" placeholder="E-mail" value="">
+						<div class="icon_email"></div>
+						<div class="s-error">Введите корректный адрес</div>
+					</div>
+				</div>
+
+				<div class="s-field">
+					<div class="text-wrapper">
+						<input type="password" tabindex="2" name="password" data-required="true" placeholder="Пароль" value="">
+						<div class="icon_password"></div>
+						<div class="s-error">Введите корректный пароль</div>
+					</div>
+				</div>
+
+			<div class="s-buttons">
+				<button tabindex="4" class="button login_bottom " name="go" type="submit">Войти</button>
+			</div>
+
+		</form>
+
+		<div class="links">
+			<a class="remind" href="#">Восстановить пароль</a>
+		</div>
+
+		</div>
+	</div>
+
+	<!-- <div class="outer absoluteCenter show">
+		<div class="showMask"></div>
+		<div class="inner">
+			<form novalidate="" data-remote="true" method="post" id="register_form" class="s-form register_form validateble" action="/ajax/login/">
+				<div class="title">Регистрация</div>
+				<div class="s-field">
+					<div class="text-wrapper">
+						<input type="email" data-validate_url="/ajax/validate/email/" id="email_field" tabindex="1" autofocus="" data-required="true" name="email" placeholder="E-mail" value="">
+						<div class="icon_email"></div>
+						<div class="s-error">Введите корректный адрес</div>
+					</div>
+				</div>
+
+				<div class="s-field">
+					<div class="text-wrapper">
+						<input type="text" data-validate_url="/ajax/validate/email/" id="email_field" tabindex="1" autofocus="" data-required="true" name="email" placeholder="Логин" value="">
+						<div class="icon_email"></div>
+						<div class="s-error">Данный логин уже занят</div>
+					</div>
+				</div>
+
+				<div class="s-field">
+					<div class="text-wrapper">
+						<input type="password" tabindex="2" name="password" data-required="true" placeholder="Пароль" value="">
+						<div class="icon_password"></div>
+						<div class="s-error">Введите корректный пароль</div>
+					</div>
+				</div>
+
+				<div class="s-field">
+					<div class="text-wrapper">
+						<input type="email" data-validate_url="/ajax/validate/email/" id="email_field" tabindex="1" autofocus="" data-required="true" name="email" placeholder="Подтвердите пароль" value="">
+						<div class="icon_email"></div>
+						<div class="s-error">Пароль не совпадает</div>
+					</div>
+				</div>
+
+			<div class="s-buttons">
+				<button tabindex="4" class="button login_bottom " name="go" type="submit">Загистрироваться</button>
+			</div>
+
+		</form>
+
+		<div class="links">
+			<a class="remind" href="#">Восстановить пароль</a>
+		</div>
+
+		</div>
+	</div> -->
+</body>
+</html>
